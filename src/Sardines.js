@@ -1,5 +1,12 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+
+/** Sardines: renders simple Sardines component w/ go back button
+ *
+ *
+ * App -> VendingMachine -> Sardines
+ *
+ */
 
 function Sardines() {
   return (
@@ -7,7 +14,6 @@ function Sardines() {
       <h1>Sardines Page</h1>
       <Link to="/"> Go Back </Link>
     </div>
-
   );
 }
 

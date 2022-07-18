@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: tomato;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  padding: 0.5em 0;
+  width: 10em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#root{
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+#root h1{
+color: black;
+
+}

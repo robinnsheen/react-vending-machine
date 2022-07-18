@@ -1,18 +1,21 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import Soda from "./Soda";
-import Chips from "./Chips";
-import Sardines from "./Sardines";
-import Home from "./Home";
+import { Link } from "react-router-dom";
+
+/** VendingMachine : renders Vending Machine component
+ *  has routes to different food components
+ *
+ *  App - > VendingMachine -> { Chips, Soda, Sardines }
+ */
 
 function VendingMachine() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/food/chips" element={<Chips />} />
-      <Route path="/food/soda" element={<Soda />} />
-      <Route path="/food/sardines" element={<Sardines />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <div>
+      <h1> Welcome to our Vending Machine website!!</h1>
+      <nav className="NavBar">
+        <Link to="/food/chips">Chips</Link>
+        <Link to="/food/soda">Soda</Link>
+        <Link to="/food/sardines">Sardines</Link>
+      </nav>
+    </div>
   );
 }
 
